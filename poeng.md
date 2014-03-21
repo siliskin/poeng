@@ -6,7 +6,7 @@ groups:
 
 CREATE TABLE groups (
   id int(5) unsigned NOT NULL AUTO_INCREMENT,
-  name varchar(256),
+  name varchar(255),
   PRIMARY KEY(id),
   UNIQUE KEY(name)
 )ENGINE=INNODB CHARACTER SET UTF8;
