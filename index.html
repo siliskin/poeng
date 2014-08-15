@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="gsk-jam" />
+  <title>GSK Oppmøte</title>
+  <meta name="description" content="Oppmøteprotokoll Grimstad Svømmeklubb">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <script src="js/jquery-2.0.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/angular/angular.min.js"></script>
+  <script>
+  var app = angular.module('poengApp', []);
+
+  app.controller('attCtrl', function ($scope, $http){
+    $scope.date = new Date();
+    
+    $http.get('api/attendance.php/users').success(function(data) {
+
+      $scope.persons = data;
+      $scope.attendance = [];
+
+      for(var i=0; i < $scope.persons.length;i++) {
+        $scope.attendance.push(
+          {id: $scope.persons[i].id,
+           name: $scope.persons[i].name,
+           comment: "",
+           attended: false});
+      }
+    });
+    $scope.getDayName = function(date) {
+      var daynames = ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"];
+      return daynames[date.getDay()];
+    };
+
+    $scope.convertDate = function (date) {
+      return date.getFullYear() + '-' +
+      (date.getMonth() < 9 ? '0' : '') + (date.getMonth()+1) + '-' +
+      (date.getDate() < 10 ? '0' : '') + date.getDate();
+    };
+
+    $scope.sendAttendance = function() {
+      console.log("Set attendance: "+$scope.convertDate($scope.date));
+      $http({url: 'api/attendance.php/attendance/'+$scope.convertDate($scope.date),
+        method: "POST",
+        data: $scope.attendance,
+        headers: {'Content-Type': 'application/json'}}).
+      success(function(data, status, headers, config) {
+        console.log("Success: "+data);
+      }).
+      error(function(data, status, headers, config) {
+        console.log("Error: "+JSON.stringify(config));
+      });
+    }
+  });
+</script>
+
+</head>
+
+<body style="padding-top: 51px; padding-left: 10px" data-ng-app="poengApp">
+  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <img src="img/logo.png" height="50" width="57"></a>
+      </div>
+      <div class="navbar-collapse collapse">
+        <form class="navbar-form navbar-right" role="form">
+          <div class="form-group">
+            <input type="text" placeholder="Email" class="form-control">
+          </div>
+          <div class="form-group">
+            <input type="password" placeholder="Passord" class="form-control">
+          </div>
+          <button type="submit" class="btn btn-success">Log inn</button>
+        </form>
+      </div><!--/.navbar-collapse -->
+    </div>
+  </div>
+
+  <header class="jumbotron">
+    <div class="container">
+      <h3>GSK Oppmøteprotokoll</h3>
+      <p>Registrering av oppmøte i konkurransegruppene.</p>
+    </div>
+  </header>
+
+  <div data-ng-controller="attCtrl" class="container">
+    <div class="row">
+      <div class="col-md-4 ">
+        <h3>
+          Oppmøte for {{getDayName(date)}} {{date.toLocaleDateString("nb-NO")}}
+        </h3>
+      </div>
+
+      <div class="col-md-8">
+        <div class="row">
+          <select class="form-control">
+            <option value="1">A-gruppa</option>
+            <option value="2">B-gruppa</option>
+            <option value="3">C-gruppa</option>
+            <option value="4">D-gruppa</option>
+            <option value="5">T-gruppa</option>
+          </select>
+        </div>
+        <div class="row">
+          <div class="col-md-8"></div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Navn</th>
+                <th>Møtt</th>
+                <th>Kommentar</th>
+              </tr>
+            </thead>
+            <tr data-ng-repeat="att in attendance">
+              <td> {{att.name}} </td>
+              <td>
+                <input type="checkbox" value="{{att.name}}" data-ng-model="att.attended">
+              </td>
+              <td><input type="text" class="form-control"  placeholder="Kommentar, årsak til fravær, etc" style="width:100%" data-ng-model="att.comment"></td>
+            </tr>
+          </table>
+          <button data-ng-click="sendAttendance()" style="margin-right: 10px">Ferdig</button>
+          <p>Oppmøte: {{attendance}}</p>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

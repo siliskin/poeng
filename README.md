@@ -1,3 +1,4 @@
 poeng
 =====
-This is a change
+An attendance protocol web app...more to come
+

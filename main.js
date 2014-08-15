@@ -1,9 +1,9 @@
 // The root URL for the RESTful services
 
-var rootURL = "http://localhost/poeng/people/user";
+var rootURL = "http://localhost/index.php/people/user";
 
-$("#btnForm").click(function(event) {
-  addUser(event)
+$("#btnForm").click(function( event ) {
+  addUser(event);
 });
 
 function addUser(event) {
@@ -27,7 +27,7 @@ function addUser(event) {
 // Helper function to serialize all the form fields into a JSON string
 function formToJSON() {
   return JSON.stringify({
-    "name": $('#name').val(), 
+    "name": $('#name').val(),
     "group_id": $('#group_id').val(),
     "year": $('#year').val(),
     "sex": $('#sex').val(),

@@ -1,0 +1,1196 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"get",
+				"getDayName"
+			],
+			[
+				"atte",
+				"attended"
+			],
+			[
+				"att",
+				"attended"
+			],
+			[
+				"D",
+				"DUPLICATE"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"user_",
+				"user_id"
+			],
+			[
+				"attendance",
+				"attendance"
+			],
+			[
+				"sql",
+				"sqlNot"
+			],
+			[
+				"atten",
+				"attendance"
+			],
+			[
+				"nav",
+				"navy"
+			],
+			[
+				"topApplica",
+				"topApplication_id"
+			],
+			[
+				"since",
+				"secondsSinceLastActivity"
+			],
+			[
+				"insert",
+				"insert_alarm"
+			],
+			[
+				"signal_",
+				"signal_threshold_on"
+			],
+			[
+				"signal",
+				"signal_strength_val"
+			],
+			[
+				"signal_tre",
+				"signal_threshold_off"
+			],
+			[
+				"dt_",
+				"dt_sent"
+			],
+			[
+				"json",
+				"json_decode"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"paloalto",
+				"paloalto_reports"
+			],
+			[
+				"rese",
+				"resendReports"
+			],
+			[
+				"curl_",
+				"curl_error"
+			],
+			[
+				"pri",
+				"print"
+			],
+			[
+				"repo",
+				"reportName"
+			],
+			[
+				"is_",
+				"is_array"
+			],
+			[
+				"file",
+				"fileName"
+			],
+			[
+				"con",
+				"config"
+			],
+			[
+				"stat",
+				"status"
+			],
+			[
+				"countr",
+				"country"
+			],
+			[
+				"country",
+				"country_alias"
+			],
+			[
+				"count",
+				"country_name"
+			],
+			[
+				"mod",
+				"moduleAlias"
+			],
+			[
+				"ping",
+				"pingInterval"
+			],
+			[
+				"start",
+				"startPos"
+			],
+			[
+				"bi",
+				"binName"
+			],
+			[
+				"mo",
+				"moduleName"
+			],
+			[
+				"module",
+				"module_id"
+			],
+			[
+				"idx",
+				"idxQuery"
+			],
+			[
+				"mysql_",
+				"mysql_fetch_array"
+			],
+			[
+				"R",
+				"row"
+			],
+			[
+				"REPE",
+				"repeaters"
+			],
+			[
+				"ipa",
+				"ipaErrText"
+			],
+			[
+				"mysql_fet",
+				"mysql_fetch_assoc"
+			],
+			[
+				"mysq",
+				"mysql_query"
+			],
+			[
+				"t",
+				"td	Tag"
+			],
+			[
+				"report",
+				"reportName"
+			],
+			[
+				"api",
+				"ApiKey"
+			],
+			[
+				"blockedUr",
+				"blockedUrlsDataTableTemplate"
+			],
+			[
+				"blocked",
+				"blockedUrlsDataTable"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"data",
+				"dataRow"
+			],
+			[
+				"ship_",
+				"ship_id"
+			],
+			[
+				"shipInf",
+				"shipInfo"
+			],
+			[
+				"qu",
+				"quotaLimit"
+			],
+			[
+				"db",
+				"dbOpcenter"
+			],
+			[
+				"url",
+				"urlencode"
+			],
+			[
+				"my",
+				"mydata"
+			],
+			[
+				"instance",
+				"instanceof"
+			],
+			[
+				"sgsnAlar",
+				"sgsnAlarmList"
+			],
+			[
+				"SGSNAlarm",
+				"SGSNAlarms"
+			],
+			[
+				"ut",
+				"util.inherits(ctor, superCtor);"
+			],
+			[
+				"alarm",
+				"alarmSyncFile"
+			],
+			[
+				"iDi",
+				"test_iDirect_modem_login_V2"
+			],
+			[
+				"idi",
+				"idirect"
+			],
+			[
+				"aer",
+				"aerouser"
+			],
+			[
+				"da",
+				"dataID"
+			],
+			[
+				"bloc",
+				"block"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"co",
+				"console"
+			],
+			[
+				"ala",
+				"alarmSyncFile"
+			],
+			[
+				"St",
+				"StateAlarmCeased"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"C",
+				"Connection"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"opti",
+				"option"
+			],
+			[
+				"opt",
+				"options"
+			],
+			[
+				"visi",
+				"visibleController"
+			],
+			[
+				"contr",
+				"controllers"
+			],
+			[
+				"vis",
+				"visibleController"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"Na",
+				"NavigationController"
+			],
+			[
+				"hea",
+				"head	Tag"
+			],
+			[
+				"Dec",
+				"Decode"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"re",
+				"req	require …"
+			],
+			[
+				"bA",
+				"background-size"
+			],
+			[
+				"backgrou",
+				"background-repeat"
+			],
+			[
+				"Tra",
+				"TrapType"
+			],
+			[
+				"ins",
+				"instring_"
+			],
+			[
+				"Decode",
+				"DecodeOctetString"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"latitude",
+				"latitude_"
+			],
+			[
+				"Ca",
+				"CalculateDistance"
+			],
+			[
+				"q",
+				"query"
+			],
+			[
+				"adjust",
+				"adjustBalanceRequest"
+			],
+			[
+				"cou",
+				"country"
+			],
+			[
+				"cus",
+				"customerDataRequest"
+			],
+			[
+				"phone",
+				"phoneno"
+			],
+			[
+				"ci",
+				"city"
+			],
+			[
+				"lo",
+				"longitude"
+			],
+			[
+				"mer",
+				"merchant_id"
+			],
+			[
+				"merc",
+				"merchantData"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"block",
+				"blockedChains"
+			],
+			[
+				"array_key",
+				"array_key_exists"
+			],
+			[
+				"merch",
+				"merchantId"
+			],
+			[
+				"blo",
+				"blockedmerchantIds"
+			],
+			[
+				"array_ke",
+				"array_key_exists"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"inli",
+				"inline-block"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"ch",
+				"chainId"
+			],
+			[
+				"preg_matc",
+				"preg_match_all"
+			],
+			[
+				"fiel",
+				"fields"
+			],
+			[
+				"CUR",
+				"CURLOPT_URL"
+			],
+			[
+				"code",
+				"codeigniter"
+			],
+			[
+				"bsel",
+				"rptrBselOn"
+			],
+			[
+				"unit",
+				"unitPage"
+			],
+			[
+				"repeater",
+				"repeaterIndex"
+			],
+			[
+				"alar",
+				"alarmExist"
+			],
+			[
+				"ph",
+				"php"
+			],
+			[
+				"para",
+				"params"
+			],
+			[
+				"un",
+				"unit"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"Select",
+				"SelectRepeaterParams"
+			],
+			[
+				"curl_eas",
+				"curl_easy_setopt"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Nodejs/Nodejs.sublime-build",
+	"command_palette":
+	{
+		"height": 313.0,
+		"selected_items":
+		[
+			[
+				"P",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"i",
+				"Package Control: Install Package"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"git c",
+				"Git: Commit"
+			],
+			[
+				"git add",
+				"Git: Add Current File"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"nodejs",
+				"Nodejs::Run::Current File"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"gitpack",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"git ",
+				"Git: Status"
+			],
+			[
+				"git st",
+				"Git: Show Tags"
+			],
+			[
+				"gi",
+				"Git: Add Current File"
+			],
+			[
+				"git ann",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git co",
+				"Git: Amend Commit"
+			],
+			[
+				"git com",
+				"Git: Commit"
+			],
+			[
+				"git: ",
+				"Git: Commit"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: git",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"remove package",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"git stat",
+				"Git: Status"
+			],
+			[
+				"git branch",
+				"Git: Pull Current Branch"
+			],
+			[
+				"g",
+				"Git: Status"
+			],
+			[
+				"git comm",
+				"Git: Commit"
+			],
+			[
+				"git ci",
+				"Git: Commit"
+			],
+			[
+				"git s",
+				"Git: Status"
+			],
+			[
+				"packe",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 561.0
+	},
+	"console":
+	{
+		"height": 169.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jam/dev/poeng/client/index.html",
+		"/Users/jam/dev/poeng/README.md",
+		"/Users/jam/dev/poeng/client/Poeng.sublime-workspace",
+		"/Users/jam/dev/poeng/attendance.php",
+		"/Users/jam/dev/poeng/main.js",
+		"/Users/jam/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/Users/jam/Library/Application Support/Sublime Text 2/Packages/SublimeLinter/README.md",
+		"/Users/jam/dev/poeng/test.php",
+		"/Users/jam/dev/poeng/client/js/jquery.slicknav.js",
+		"/Users/jam/dev/poeng/poeng.md",
+		"/Users/jam/dev/poeng/client/css/bootstrap.css",
+		"/Users/jam/dev/poeng/client/js/jquery-2.0.3.min.js",
+		"/Users/jam/dev/dash/index.html",
+		"/Users/jam/dev/poeng/client/js/persons.json",
+		"/Users/jam/dev/poeng/db.conf",
+		"/Users/jam/dev/bonanzooka/HTML/index.html",
+		"/Users/jam/dev/themeforest/square-v1.4/dist/index.html",
+		"/Users/jam/dev/bonanzooka/BONANZOOKA/index.html",
+		"/Users/jam/Documents/index.html",
+		"/Users/jam/dev/my/test.js",
+		"/Users/jam/dev/reportserver/models/top-application.js",
+		"/Users/jam/dev/reportserver/controllers/top-application.js",
+		"/Users/jam/dev/reportserver/test/PostTopApplicationsJSON.json",
+		"/Users/jam/dev/reportserver/models/report.js",
+		"/Users/jam/dev/reportserver/controllers/report.js",
+		"/Users/jam/dev/newcontrolserver.json",
+		"/Users/jam/dev/ship-gps-simulation/Readme.md",
+		"/Users/jam/dev/beerlocker/server.json",
+		"/Users/jam/dev/dash/api/models/bears.js",
+		"/Users/jam/dev/dash/api/package.json",
+		"/Users/jam/dev/dash/api/app.js",
+		"/Users/jam/dev/dash/api/bin/www",
+		"/Users/jam/dev/my/widgets/js/main.js",
+		"/Users/jam/dev/Cell@Sea/cas/freq_ctrl/lgc_handler/lgc_handler.c",
+		"/Users/jam/dev/my/index.html",
+		"/Users/jam/support/aero/jsonrpclib-read-only-fixed/jsonrpclib/SimpleJSONRPCServer.py",
+		"/Users/jam/support/aero/jsonrpclib-read-only-fixed/jsonrpclib/test_ssl.py",
+		"/Users/jam/dev/my/test.pl",
+		"/Users/jam/dev/aeromobile/flight-feed/SecureJSONRPCServer.py",
+		"/Users/jam/dev/Cell@Sea/cas/freq_ctrl/area_handler/area_handler.c",
+		"/Users/jam/Downloads/QTR_DATA/archive/QTR/2014/May/01/2014-05-01:07:46:16_fileKNtEEU.1398930377.txt",
+		"/Users/jam/dev/Cell@Sea/mobileaccess/src/controller/Device.cpp",
+		"/Users/jam/dev/Cell@Sea/mobileaccess/src/controller/MASelectDevicesQuery.cpp",
+		"/Users/jam/dev/Cell@Sea/mobileaccess/src/controller/Controller.cpp",
+		"/Users/jam/dev/Cell@Sea/mobileaccess/src/controller/Controller.hpp",
+		"/Users/jam/dev/Cell@Sea/mobileaccess/src/controller/MASelectDevicesQuery.hpp",
+		"/Users/jam/dev/Cell@Sea/cas/web/parameter.php",
+		"/Users/jam/dev/Cell@Sea/cas/web/parameters.php",
+		"/Users/jam/dev/Cell@Sea/mbl-php/tools/install-phar-suse11.1",
+		"/Users/jam/dev/Cell@Sea/cas/common/common.h",
+		"/Users/jam/dev/my/vave-certs/vave-cert.csr",
+		"/Users/jam/dev/Cell@Sea/cas/web/sql.php",
+		"/Users/jam/dev/new-offshore-struktur/paloalto/test/sendpalotestreport.php",
+		"/Users/jam/dev/new-offshore-struktur/mdlb/pepwave-report.js",
+		"/Users/jam/dev/new-offshore-struktur/ReportServer/logger.js",
+		"/Users/jam/dev/new-offshore-struktur/mdlb/package.json",
+		"/Users/jam/dev/new-offshore-struktur/mdlb/logger.js",
+		"/Users/jam/dev/new-offshore-struktur/mdlb/templates/html.ejs",
+		"/Users/jam/dev/new-offshore-struktur/mdlb/config.json",
+		"/Users/jam/dev/offshore/bak/reports/config.json",
+		"/Users/jam/dev/offshore/bak/reports/pepwave-report.js",
+		"/Users/jam/dev/new-offshore-struktur/ReportServer/Report.js",
+		"/Users/jam/dev/offshore/offshore-reports/api/config.json",
+		"/Users/jam/dev/offshore/offshore-reports/api/templates/html.ejs",
+		"/Users/jam/support/m116s0.log",
+		"/Users/jam/tmp/snmpwalk_mcpmobma.txt",
+		"/Users/jam/dev/offshore/reports-onboard/config.php",
+		"/Users/jam/dev/offshore/offshore-reports/api/TopAppSummary.js",
+		"/Users/jam/dev/offshore/offshore-reports/api/TopBlockedUrlSummary.js",
+		"/Users/jam/dev/offshore/reports-onboard/Readme.md",
+		"/Users/jam/dev/offshore/offshore-reports/top-apps.xml",
+		"/Users/jam/dev/Cell@Sea/cas/web/repeater.php",
+		"/Users/jam/dev/offshore/offshore-reports/config.json",
+		"/Users/jam/dev/offshore/offshore-reports/api/Report.js",
+		"/Users/jam/dev/offshore/offshore-reports/api/OffshoreReportsServer.js",
+		"/Users/jam/dev/offshore/offshore-reports/api/uploads/10905-146xu6x.xml",
+		"/Users/jam/dev/offshore/offshore-reports/paloalto-report.js",
+		"/Users/jam/dev/offshore/offshore-reports/api/dbconf.txt",
+		"/Users/jam/Documents/hello.py",
+		"/Users/jam/dev/offshore/offshore-reports/TopBlockedUrlSummary.js",
+		"/Users/jam/dev/offshore/offshore-reports/TopAppSummary.js",
+		"/Users/jam/dev/offshore/reports-onboard/paloalto-reports.php",
+		"/Users/jam/dev/offshore/offshore-reports/pepwave-report.js",
+		"/Users/jam/dev/Cell@Sea/cas/web/control_repeaters.php",
+		"/Users/jam/dev/crewSimWebAdmin/cswebadmin.html",
+		"/Users/jam/dev/offshore/offshore-reports/api/db.conf",
+		"/Users/jam/dev/offshore/reports-api/config.json",
+		"/Users/jam/dev/offshore/bak/offshore-reports/paloalto-report.js",
+		"/Users/jam/dev/offshore/reports-api/package.json",
+		"/Library/WebServer/Documents/ida.html",
+		"/Users/jam/dev/offshore/reports-api/OffshoreReportsServer.js",
+		"/Users/jam/dev/Cell@Sea/test.php",
+		"/Users/jam/dev/index.html",
+		"/Users/jam/dev/my/repeater.php",
+		"/Users/jam/dev/Cell@Sea/cas/web/header.inc",
+		"/Users/jam/dev/Cell@Sea/cas/common/messages.h",
+		"/Users/jam/Downloads/form/form.html",
+		"/Users/jam/dev/my/untitled",
+		"/Users/jam/Downloads/form/view.css",
+		"/Users/jam/dev/cas/web/lgc.php",
+		"/Users/jam/dev/cas/web/status.php",
+		"/Users/jam/dev/cas/web/control_repeaters.php",
+		"/Users/jam/dev/offshore/ship2shore/test.php",
+		"/Users/jam/dev/offshore/offshore-reports-onboard/test.php",
+		"/Users/jam/dev/offshore/offshore-reports-onboard/config.php",
+		"/Users/jam/dev/offshore/paloalto/key.txt",
+		"/Users/jam/dev/offshore/offshore-reports-onboard/paloalto-reports.php",
+		"/Users/jam/dev/offshore/ship2shore/offshore-reports-api/app.js",
+		"/Users/jam/dev/offshore/paloalto/test.js",
+		"/Users/jam/dev/crewsim/crewsim-smshandler/SMSSendClient.php",
+		"/Users/jam/dev/offshore/offshore-reports-onboard/Readme.md",
+		"/Users/jam/dev/offshore/paloalto/getXMLReport.js",
+		"/Users/jam/dev/SMSSendClient.php",
+		"/Users/jam/dev/offshore/offshore-reports-onboard/control_repeaters.php",
+		"/Users/jam/dev/offshore/paloalto/tst.php",
+		"/Users/jam/Dropbox/Svømming/Terminliste 2014",
+		"/Users/jam/dev/offshore/traffic-report/routes/index.js",
+		"/Users/jam/dev/offshore/ship2shore/offshore-reports-api/routes/index.js",
+		"/Users/jam/dev/test.js",
+		"/Users/jam/dev/offshore/ship2shore/offshore-reports-api/routes/user.js",
+		"/Users/jam/dev/offshore/offshore-reports/week.js",
+		"/Users/jam/dev/offshore/offshore-reports/templates/test.html",
+		"/Users/jam/dev/offshore/offshore-reports/report.xml",
+		"/Users/jam/dev/offshore/offshore-reports/top-blocked-url-summary.xml",
+		"/Users/jam/Stevneplan 2014",
+		"/Users/jam/Desktop/Torbjørn-2014",
+		"/Users/jam/dev/offshore/offshore-reports/o.html",
+		"/Users/jam/dev/offshore/offshore-reports/templates/html.ejs"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			"/Users/jam/dev/Cell@Sea/cas/",
+			"/Users/jam/dev/Cell@Sea/cas/freq_ctrl/bsc_handler",
+			"/Users/jam/dev/Cell@Sea/cas",
+			"/Users/jam/dev/Cell@Sea/repeater-handler",
+			"/Users/jam/dev/Cell@Sea/cas/",
+			"/Users/jam/dev/cas/freq_ctrl/bsc_handler/",
+			"/Users/jam/dev/cas",
+			"/Users/jam/dev/offshore",
+			"/Users/jam/dev/crewsim",
+			"/Users/jam/dev/newvave/vave/platforms/ios/www/",
+			"/Users/jam/dev/newvave/vave/platforms/ios/www/mobile",
+			"/Users/jam/dev/mcp3/modules/aeromobile/src"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"poengApp",
+			"attCtrl",
+			"selected",
+			"data-ng",
+			"ng-",
+			"getAtte",
+			"console.log",
+			"setAttendance",
+			"GETATTE",
+			"persons",
+			"attCtrl",
+			"poengApp",
+			"getAttendanceForUser",
+			"json_encode",
+			"getatt",
+			"getUsers",
+			"group",
+			"user",
+			"getUsers",
+			"people",
+			"adduser",
+			"placeholder=\"Kommentar...\"",
+			"<td></td>",
+			"table",
+			"theme",
+			"small-box",
+			"main-theme",
+			"olor: @gray",
+			"topA",
+			"delete",
+			"sessions",
+			"bytes",
+			"app",
+			"'",
+			"topApplications",
+			"topApplicationss",
+			"topApplications",
+			"TopApplications",
+			"topApplication",
+			"report",
+			"Beer",
+			"Beers",
+			"locke",
+			"beer",
+			"Beer",
+			"Beers",
+			"LGC status",
+			"unknown",
+			"get_STATUS",
+			"ALARM_NEW",
+			"raise",
+			"'O",
+			"mapStatusToDetails",
+			"'D'",
+			"mapStatusToDetails",
+			"trip",
+			"rau",
+			"do_POST",
+			"do_P",
+			"socket",
+			"SocketServer",
+			"time",
+			"soc",
+			"SecureThreadedJSONRPCServer",
+			"simple",
+			"socke",
+			"socket",
+			"check_socket_and_wait_for_timeout",
+			"The handshake operation timed out",
+			"check_socket_and_wait_for_timeout",
+			"SSL_do_handshake",
+			"do_handshake",
+			"do_handshake_on_connect",
+			"socket_type",
+			"%",
+			"\\%",
+			"%",
+			"];",
+			"get_parameters",
+			"insert_alarm",
+			"check_alarm",
+			"BaseWizard",
+			"signal",
+			"signal_threshold",
+			"shore_distance",
+			"restarting",
+			"sendIogConnect",
+			"connect",
+			"IOG_LOGFILE",
+			"connect",
+			"iogSocketInput",
+			"connect_to_db",
+			"fm_mysql",
+			"connect_to_db",
+			"CR_SERVER_LOST",
+			"CR_SERVER",
+			"INSERT INTO intr_log",
+			" INSERT INTO intr_log",
+			"BIN_PATH",
+			"log",
+			"RS232 port error\nRS232 port error\n",
+			"readParameters",
+			"chopString",
+			"SELECT id,name,trgname,neig",
+			"main",
+			"cellData",
+			"cell_data",
+			"BCCH",
+			"Add 3g",
+			"isModulePresent",
+			"add 3g",
+			"MASelectDevicesQuery",
+			"add 3g",
+			"add logger",
+			"Run",
+			"submit",
+			"printWizard",
+			"add cdma",
+			"print",
+			"\"",
+			"isModulePresent",
+			"executeTask",
+			"filter",
+			"unable to send",
+			"layoff",
+			"cell3g",
+			"createSelect",
+			"signal"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"attended",
+			"data-ng-",
+			"data-ng",
+			"users",
+			"",
+			"<td><input type=\"text\" class=\"form-control\" placeholder=\"Kommentar...\" style=\"width:100%\"></td>",
+			"\"sessions\"",
+			"\"bytes\"",
+			"\"app\"",
+			"\"",
+			"topApplication",
+			"TopApplication",
+			"topApplications",
+			"topApplication",
+			"Report",
+			"Reports",
+			"report",
+			"Report",
+			"Reports",
+			"signal_threshold_off",
+			"'",
+			"log.info",
+			"print",
+			"printf",
+			"255",
+			"",
+			"htmlTemplate",
+			"\\\"",
+			"'",
+			"data",
+			"TopBlockedUrlSummary",
+			"res",
+			"req",
+			"PATH",
+			"$this->paloaltoIp",
+			"$this->shipId",
+			"$this->db",
+			"Paloalto",
+			"paloalto",
+			"repeaters",
+			"$_POST",
+			"",
+			"style=",
+			"style=\"pad",
+			"",
+			"blockedUrlsData",
+			"appData",
+			"log.info",
+			"mailingList",
+			"g_ev",
+			"g_emitter",
+			"emitter",
+			"pep",
+			"PepwaveNotice",
+			"Fleet",
+			"\"",
+			"Fleet",
+			"154777",
+			"http",
+			"vave.me",
+			"cordova.js",
+			"data",
+			"user",
+			"people",
+			"",
+			"name text",
+			"fjosta",
+			"prisun",
+			"prirub",
+			"pricar",
+			"stesue",
+			"cuneli",
+			"sgsnAlarmList",
+			"nodeAlarmList",
+			"userCredentials",
+			"log.debug",
+			"}",
+			"{",
+			"",
+			"db.",
+			"host",
+			"test",
+			"this.db.",
+			"this.config",
+			"alarmList",
+			"alarmlist",
+			"sgsnAlarms",
+			"alarms",
+			".log",
+			"console",
+			"SwimEvent",
+			"length",
+			"08-08",
+			"2013",
+			"\"\\\"\"",
+			"DateTime",
+			"BeamName",
+			"\"",
+			"",
+			"\"",
+			"RadioViewController",
+			"root",
+			"return false;",
+			"root",
+			"opcenterAlarms",
+			"currentAlarmsFile",
+			"alarmSync",
+			"\",\"",
+			"boost::program_options",
+			"",
+			"row",
+			"commonPdu_",
+			"CSERTrap",
+			"aeromobile",
+			"CSERTrapHandler",
+			"aeromobile",
+			"",
+			"aeromobile",
+			"str",
+			"result\": \"error\",\"details\": ",
+			"{}",
+			"",
+			"red",
+			"green",
+			"",
+			" ",
+			"",
+			"red"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 39.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 204.0
+	},
+	"output.git":
+	{
+		"height": 138.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"replace":
+	{
+		"height": 86.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"t3.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 339.0,
+	"status_bar_visible": true
+}
