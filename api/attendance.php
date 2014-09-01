@@ -23,7 +23,7 @@ $app->get('/hei', function() {
 
 $app->get('/users', 'getUsers');
 $app->get('/users/:id', 'getUser');
-// $app->get('/users/group/:id', 'getUserGroup');
+$app->get('/users/group/:id', 'getUserGroup');
 $app->post('/users/user', 'addUser');
 //$app->put('/users/user/:id', 'updateUser');
 // $app->delete('/users/:id',  'deleteUser');
@@ -39,7 +39,7 @@ $app->get('/', function () {
 });
 
 function getUsers() {
-  $sql = "select * FROM users ORDER BY name";
+  $sql = "select * FROM users ORDER BY group_id";
   try {
     $db = getConnection();
     $stmt = $db->query($sql);  
@@ -67,6 +67,31 @@ function getUser($id) {
   }
 }
 
+function getUserGroup($id) {
+  $myId = intval($id);
+  if($myId == 0) {
+    getUsers();
+    return;
+  }
+  $sql = "SELECT * FROM users WHERE group_id=:id";
+  try {
+    $db = getConnection();
+    $stmt = $db->prepare($sql);  
+    $stmt->bindParam("id", $myId);
+    $stmt->execute();
+    $group = $stmt->fetchAll(PDO::FETCH_OBJ);
+    $db = null;
+    if( $group ) {
+      echo json_encode($group, JSON_UNESCAPED_UNICODE); 
+    } else {
+      echo '[]'; 
+    }
+  } catch(PDOException $e) {
+    echo '{"error":{"text":'. $e->getMessage() .'}}'; 
+  }
+}
+
+
 function addUser() {
   error_log('addUser\n', 3, '/var/tmp/php.log');
   $request = Slim::getInstance()->request();
@@ -82,7 +107,7 @@ function addUser() {
     $stmt->bindParam("year", $user->year);
     $stmt->execute();
     $db = null;
-    echo json_encode($user, JSON_UNESCAPED_UNICODE); 
+    echo '{"result": "ok"}';
   } catch(PDOException $e) {
     error_log($e->getMessage(), 3, '/var/tmp/php.log');
     echo '{"error":{"text":'. $e->getMessage() .'}}'; 
@@ -179,7 +204,7 @@ function setAttendance($date) {
     }
     $db = null;
     echo '{"result":"ok"}'; 
-  
+    
   } catch(PDOException $e) {
     error_log($e->getMessage(), 3, '/var/tmp/php.log');
     echo '{"error":{"text":'. $e->getMessage() .'}}'; 
