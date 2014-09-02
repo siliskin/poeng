@@ -23,9 +23,9 @@
     {name: "B-gruppa", id: 2},
     {name: "C-gruppa", id: 3},
     {name: "D-gruppa", id: 4}];
-    $scope.groupSelected = $scope.groups[0];
+    $scope.groupSelected = $scope.groups[1];
     $scope.persons = [];
-    $scope.attendance = [];    
+    $scope.attendance = [];
     
     $http.get('api/attendance.php/users/group/'+$scope.groupSelected.id).success(function(data) {
 
@@ -55,6 +55,7 @@
       console.log("Get group: "+$scope.groupSelected.name);
       $http.get('api/attendance.php/users/group/'+$scope.groupSelected.id).success(function(data) {
         $scope.persons = data;
+        $scope.attendance = [];
         for(var i=0; i < $scope.persons.length;i++) {
           $scope.attendance.push(
             {id: $scope.persons[i].id,
@@ -62,7 +63,15 @@
              comment: "",
              attended: false});
         }
+        if( !$scope.$$phase ) {
+          $scope.$apply();
+        }
       });
+    };
+
+    $scope.printAttendance = function(attended) {
+      console.log(attended);
+
     };
 
     $scope.sendAttendance = function() {
@@ -120,9 +129,13 @@
         </h3>
       </div>
       <div class="row">
-        <p>
-          <select class="form-control" ng-change="getGroup()" ng-model="groupSelected" ng-options="group.name for group in groups"></select>
-        </p>
+        <div class="col-md-4">
+          <p>
+            <select class="form-control" ng-change="getGroup()" ng-model="groupSelected" ng-options="group.name for group in groups"></select>
+          </p>
+        </div>
+        <div class="col-md-8">
+          <input type="text" class="form-control" data-ng-model="elementName"/> 
       </div>
       <div class="row">
         <table class="table">
@@ -133,10 +146,10 @@
               <th>Kommentar</th>
             </tr>
           </thead>
-          <tr data-ng-repeat="att in attendance">
+          <tr data-ng-repeat="att in attendance | filter:{name: elementName}">
             <td> {{att.name}} </td>
             <td>
-              <input type="checkbox" value="{{att.name}}" data-ng-model="att.attended">
+              <input type="checkbox" value="{{att.name}}" ng-click="printAttendance(att)" data-ng-model="att.attended">
             </td>
             <td><input type="text" class="form-control"  placeholder="Kommentar, årsak til fravær, etc" style="width:100%" data-ng-model="att.comment"></td>
           </tr>
