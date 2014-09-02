@@ -80,12 +80,10 @@
         </div>
         <div class="col-md-4">
           <ul class="list-group">
-            <li>
-              <a href="#" class="list-group-item active">
-                <h4 class="list-group-item-heading">Møtt</h4>
-                <p class="list-group-item-text">Disse var på dagens trening:</p>
-              </a>
-            </li>
+            <a href="#" class="list-group-item active">
+              <h4 class="list-group-item-heading">Møtt</h4>
+              <p class="list-group-item-text">Disse var på dagens trening:</p>
+            </a>
             <li data-ng-repeat="person in attendance" class="list-group-item ng-show" ng-show="person.attended"->
               <input type="checkbox" value="{{person.name}}" data-ng-model="person.attended"> {{person.name}}
             </li>
