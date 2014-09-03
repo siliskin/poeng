@@ -50,7 +50,7 @@
       </div>
       <div class="row">
         <p>
-          <select class="form-control" ng-change="getGroup()" ng-model="groupSelected" ng-options="group.name for group in groups"></select>
+          <select class="form-control" ng-model="groupSelected" ng-options="group.name for group in groups"></select>
         </p>
         <p>
           <input type="text" class="form-control" placeholder="Søk" data-ng-model="elementName"/> 
@@ -63,7 +63,7 @@
               <h4 class="list-group-item-heading">Oppmøte</h4>
               <p class="list-group-item-text">Hvem har møtt i dag?</p>
             </a>
-            <li data-ng-repeat="att in attendance | filter:{name: elementName}"  class="list-group-item ng-hide" ng-hide="att.attended">
+            <li data-ng-repeat="att in attendance | filter: {name: elementName, group_id: groupSelected.id || 0}"  class="list-group-item ng-hide" ng-hide="att.attended">
               <input type="checkbox" value="{{att.name}}" data-ng-model="att.attended"> {{att.name}}
             </li>
           </ul>
@@ -94,7 +94,7 @@
     {name: "B-gruppa", id: 2},
     {name: "C-gruppa", id: 3},
     {name: "D-gruppa", id: 4}];
-    $scope.groupSelected = $scope.groups[1];
+    $scope.groupSelected = $scope.groups[0];
     $scope.persons = [];
     $scope.attendance = [];
 
@@ -106,6 +106,7 @@
         $scope.attendance.push(
           {id: $scope.persons[i].id,
            name: $scope.persons[i].name,
+           group_id: $scope.persons[i].group_id,
            comment: "",
            attended: false});
       }
@@ -126,17 +127,6 @@
       console.log("Get group: "+$scope.groupSelected.name);
       $http.get('api/attendance.php/users/group/'+$scope.groupSelected.id).success(function(data) {
         $scope.persons = data;
-        $scope.attendance = [];
-        for(var i=0; i < $scope.persons.length;i++) {
-          $scope.attendance.push(
-            {id: $scope.persons[i].id,
-             name: $scope.persons[i].name,
-             comment: "",
-             attended: false});
-        }
-        if( !$scope.$$phase ) {
-          $scope.$apply();
-        }
       });
     };
 
