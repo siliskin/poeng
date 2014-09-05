@@ -8,10 +8,16 @@
   <meta name="description" content="Oppmøteprotokoll Grimstad Svømmeklubb">
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <script src="js/jquery-2.1.1.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/angular/angular.min.js"></script>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+  <script src="js/filters.js"></script> 
+  <script src="js/controllers.js"></script>
+  <script src="js/poeng.js"></script>
 </head>
 
 <body style="padding-top: 51px; padding-left: 20px" data-ng-app="poengApp">
@@ -41,110 +47,9 @@
       </div>
     </div>
   </header>
-  <div data-ng-controller="attCtrl" class="container">
-    <div class="row">
-      <div>
-        <h3 style="text-align: center;">
-          Oppmøte for {{getDayName(date)}} {{date.toLocaleDateString("nb-NO")}}
-        </h3>
-      </div>
-      <div class="row">
-        <p>
-          <select class="form-control" ng-model="groupSelected" ng-options="group.name for group in groups"></select>
-        </p>
-        <p>
-          <input type="text" class="form-control" placeholder="Søk" data-ng-model="elementName"/> 
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-xs-6">
-          <ul class="list-group">
-            <a href="#" class="list-group-item active">
-              <h4 class="list-group-item-heading">Oppmøte</h4>
-              <p class="list-group-item-text">Hvem har møtt i dag?</p>
-            </a>
-            <li data-ng-repeat="att in attendance | filter: {name: elementName, group_id: groupSelected.id || 0}"  class="list-group-item ng-hide" ng-hide="att.attended">
-              <input type="checkbox" value="{{att.name}}" data-ng-model="att.attended"> {{att.name}}
-            </li>
-          </ul>
-          <button data-ng-click="sendAttendance()" class="btn btn-primary btn-lg btn-block">Ferdig</button>
-        </div>
-        <div class="col-xs-6">
-          <ul class="list-group">
-            <a href="#" class="list-group-item active">
-              <h4 class="list-group-item-heading">Møtt</h4>
-              <p class="list-group-item-text">Disse var på dagens trening:</p>
-            </a>
-            <li data-ng-repeat="person in attendance" class="list-group-item ng-show" ng-show="person.attended">
-              <input type="checkbox" value="{{person.name}}" data-ng-model="person.attended"> {{person.name}}
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <script>
-  var app = angular.module('poengApp', []);
 
-  app.controller('attCtrl', function ($scope, $http){
-    $scope.date = new Date();
-    $scope.groups = [ 
-    {name: "Alle", id: 0},
-    {name: "A-gruppa", id: 1},
-    {name: "B-gruppa", id: 2},
-    {name: "C-gruppa", id: 3},
-    {name: "D-gruppa", id: 4}];
-    $scope.groupSelected = $scope.groups[0];
-    $scope.persons = [];
-    $scope.attendance = [];
+  <div ng-view></div>
 
-    $http.get('api/attendance.php/users/group/'+$scope.groupSelected.id).success(function(data) {
-
-      $scope.persons = data;
-
-      for(var i=0; i < $scope.persons.length;i++) {
-        $scope.attendance.push(
-          {id: $scope.persons[i].id,
-           name: $scope.persons[i].name,
-           group_id: $scope.persons[i].group_id,
-           comment: "",
-           attended: false});
-      }
-    });
-
-    $scope.getDayName = function(date) {
-      var daynames = ["Søndag", "Mandag", "Tirsdag", "Onsdag", "Torsdag", "Fredag", "Lørdag"];
-      return daynames[date.getDay()];
-    };
-
-    $scope.convertDate = function (date) {
-      return date.getFullYear() + '-' +
-      (date.getMonth() < 9 ? '0' : '') + (date.getMonth()+1) + '-' +
-      (date.getDate() < 10 ? '0' : '') + date.getDate();
-    };
-
-    $scope.getGroup = function() {
-      console.log("Get group: "+$scope.groupSelected.name);
-      $http.get('api/attendance.php/users/group/'+$scope.groupSelected.id).success(function(data) {
-        $scope.persons = data;
-      });
-    };
-
-    $scope.sendAttendance = function() {
-      console.log("Set attendance: "+$scope.convertDate($scope.date));
-      $http({url: 'api/attendance.php/attendance/'+$scope.convertDate($scope.date),
-        method: "POST",
-        data: $scope.attendance,
-        headers: {'Content-Type': 'application/json'}}).
-      success(function(data, status, headers, config) {
-        console.log("Success: "+data);
-      }).
-      error(function(data, status, headers, config) {
-        console.log("Error: "+JSON.stringify(config));
-      });
-    };
-  });
-</script>
-
+  
 </body>
 </html>
