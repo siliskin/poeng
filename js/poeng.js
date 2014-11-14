@@ -7,10 +7,6 @@ app.config(['$routeProvider',
       templateUrl: 'views/register.html',
       controller: 'RegisterCtrl'
     }).
-    when('/review', {
-      templateUrl: 'views/review.html',
-      controller: 'ReviewDetailCtrl'
-    }).
     otherwise({
       redirectTo: '/register'
     });

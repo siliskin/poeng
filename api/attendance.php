@@ -157,19 +157,26 @@ function deleteUser($id) {
 // $app->put('/attendance/:date', 'editAttendance');
 
 function getAttendance() {
+  $request = Slim::getInstance()->request();
+  $myDate = $request->get('date');
   $sql = "SELECT user_id, DATE_FORMAT(date, '%d-%m-%Y') as date FROM attendance ORDER BY date DESC";
+
+  if($myDate) {
+    $sql = "SELECT users.name, attendance.attended FROM users, attendance WHERE attendance.date=\"$myDate\" and users.id=attendance.user_id";
+  }
   try {
     $db = getConnection();
     $stmt = $db->query($sql);  
-    $users = $stmt->fetchAll(PDO::FETCH_OBJ);
+    $attendance = $stmt->fetchAll(PDO::FETCH_OBJ);
     $db = null;
-    echo json_encode($users, JSON_UNESCAPED_UNICODE);
+    echo json_encode($attendance, JSON_UNESCAPED_UNICODE);
   } catch(PDOException $e) {
     echo '{"error":{"text":'. $e->getMessage() .'}}'; 
   }
 }
 
 function getAttendanceForUser($id) {
+  echo "attendance fpr user";
   $sql = "SELECT DATE_FORMAT(date, '%d-%m-%Y') as date FROM attendance WHERE user_id=:id";
   try {
     $db = getConnection();
@@ -185,7 +192,6 @@ function getAttendanceForUser($id) {
 }
 
 function setAttendance($date) {
-
   error_log('updateUser\n', 3, '/var/tmp/php.log');
   $request = Slim::getInstance()->request();
   $attendance = json_decode($request->getBody());
@@ -209,7 +215,6 @@ function setAttendance($date) {
     error_log($e->getMessage(), 3, '/var/tmp/php.log');
     echo '{"error":{"text":'. $e->getMessage() .'}}'; 
   }
-
 }
 
 //DB
